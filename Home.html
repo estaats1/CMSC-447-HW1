@@ -9,36 +9,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Home</title>
+
+    <style>
+        .square {
+            height: 350px;
+            width: 750px;
+            background: linear-gradient(to top, rgb(133, 193, 255, 0.9), rgb(152, 255, 143, 0.9));
+            border-radius: 50%;
+            position: fixed;
+            top: 25%;
+            left: 50%;
+            margin-left: -375px;
+        }
+
+        .borderline {
+            height: 1px;
+            width: 1000px;
+            position: fixed;
+            left: 50%;
+            margin-left: -500px;
+        }
+
+    </style>
 </head>
 
-<nav class="navbar navbar-expand-sm" style="background-color: #9912A9;">
+<nav class="navbar navbar-expand-sm" style="background: linear-gradient(to right, rgba(0,255,255,1), rgba(187,0,255,1));">
     <div class="container-fluid">
         <div class="nav justify-content-center">
             <div class="nav-item">
-                <a class="nav-link text-white active" href="Home.html">Home</a>
+                <a class="nav-link text-black active" href="Home.html">Home</a>
             </div>
             <div class="nav-item">
-                <a class="nav-link text-white" href="About.html">About</a>
+                <a class="nav-link text-black" href="About.html">About</a>
             </div>
         </div>
-        <a class="btn my-sm-1" type="button" style="background-color: #05D7E1;" href="About.html">Press me!</a>
+        <a class="btn my-sm-1" type="button" style="background-color: rgba(0,255,255,1);" href="Bonus1.html">Press me!</a>
     </div>
 </nav>
 
-<body>
-    <div class="container m-4">
-        <div class="border-bottom border-info">
-            <h1>Home Page</h1>
-        </div>
+<body style="background-color: rgba(25,25,25,1); font-family: serif;">
+
+    <div class="square rounded">
+        <h1 class="text-white p-5" style="font-size: 500%; text-align: center;">Welcome</h1>
+        <h4 class="text-white p-4" style="text-align: center;">See more using the navigation bar above.</h4>
     </div>
 
-    <h4 class="m-4">
-        Welcome!
-    </h4>
+    <div class="borderline" style="top: 75%; background: rgb(152, 255, 143, 0.9); "></div>
 
-    <p class="m-3">
-        Welcome to my website! Click the links above to learn more. 
-    </p>
+    <div class="borderline" style="top: 15%; background: rgb(133, 193, 255, 0.9); "></div>
+
 </body>
 
 </html>
